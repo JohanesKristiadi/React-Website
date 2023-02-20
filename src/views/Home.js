@@ -2,6 +2,8 @@ import React from "react";
 import "../style/Home.css"
 import MainLayout from "../layouts/MainLayout";
 
+import { Link } from "react-router-dom"
+
 class Home extends React.Component {
     // membuat state untuk membaca data
     state = {
@@ -41,8 +43,10 @@ class Home extends React.Component {
                     {/* melakukan perulangan untuk membaca data skill */}
                     {skill.map(item =>
                         <div key={item.id} className="card">
-                            <img src={item.image} alt={item.name} className="img" />
-                            <h3>{item.name}</h3>
+                            <Link to={`/detail/${item.id}`}>
+                                <img src={item.image} alt={item.name} className="img" />
+                                <h3>{item.name}</h3>
+                            </Link>
                         </div>
                     )}
                 </div>

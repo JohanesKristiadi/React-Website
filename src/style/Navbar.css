@@ -1,0 +1,15 @@
+.Navbar {
+    display: flex;
+    background: #fe024e;
+    padding: 0 6rem;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+.my-ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}

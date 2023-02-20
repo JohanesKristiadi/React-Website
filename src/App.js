@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import "./style/App.css"
 
-function App() {
+// untuk membuat halaman seperti "localhost:3000/home" dll bisa import ini dulu
+import { Route } from 'react-router-dom';
+import Home from './views/Home';
+import About from './views/About';
+import Contact from './views/Contact';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <Route path="/" exact component={Home} />
+      <Route path="/About" exact component={About} />
+      <Route path={"/Contact"} exact component={Contact} />
     </div>
-  );
+  )
 }
 
 export default App;

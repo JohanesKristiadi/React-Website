@@ -4,31 +4,30 @@ import MainLayout from "../layouts/MainLayout"
 
 class Detail extends React.Component {
     state = {
-        skills: [
-            {
-                id: 1,
-                name: "Javascript",
-                description: "Javascript description",
-                image: require("../images/logo-boostrap.png")
-            },
-            {
-                id: 2,
-                name: "React",
-                description: "React description",
-                image: require("../images/logo-js.png")
-            },
-            {
-                id: 3,
-                name: "Vue",
-                description: "Vue description",
-                image: require("../images/logo-react.png")
-            },
-            {
-                id: 4,
-                name: "Svelte",
-                description: "Svelte description",
-                image: require("../images/logo-vue.png")
-            }
+        skills: [{
+            id: 1,
+            name: "Javascript",
+            description: "Javascripts descriptions",
+            image: require("../images/logo-js.png")
+        },
+        {
+            id: 2,
+            name: "Vue",
+            description: "Vue Descriptions",
+            image: require("../images/logo-vue.png")
+        },
+        {
+            id: 3,
+            name: "React",
+            description: "React Descriptions",
+            image: require("../images/logo-react.png")
+        },
+        {
+            id: 4,
+            name: "Boostrap",
+            description: "Boostrap descriptions",
+            image: require("../images/logo-boostrap.png")
+        }
         ],
         data: ""
     }
